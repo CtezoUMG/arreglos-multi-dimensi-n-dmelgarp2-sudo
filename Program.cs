@@ -16,13 +16,16 @@ for (int i = 0; i < n; i++)
 
 // --- INICIO DE LÓGICA DEL ALUMNO ---
 // Instrucción: El alumno debe encontrar el valor máximo del arreglo 'numeros'
-int maximo = numeros[0]; 
-
-for (int i = 1; i < numeros.Length; i++)
+if (n > 0)
 {
-    if (numeros[i] > maximo)
+    maximo = numeros[0];
+
+    for (int i = 1; i < n; i++)
     {
-        maximo = numeros[i];
+        if (numeros[i] > maximo)
+        {
+            maximo = numeros[i];
+        }
     }
 }
 
