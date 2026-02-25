@@ -16,16 +16,13 @@ for (int i = 0; i < n; i++)
 
 // --- INICIO DE LÓGICA DEL ALUMNO ---
 // Instrucción: El alumno debe encontrar el valor máximo del arreglo 'numeros'
-if (n > 0)
-{
-    maximo = numeros[0];
+int maximo = numeros[0]; 
 
-    for (int i = 1; i < n; i++)
+for (int i = 1; i < n; i++)
+{
+    if (numeros[i] > maximo)
     {
-        if (numeros[i] > maximo)
-        {
-            maximo = numeros[i];
-        }
+        maximo = numeros[i];
     }
 }
 
