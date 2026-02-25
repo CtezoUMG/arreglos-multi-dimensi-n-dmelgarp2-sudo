@@ -16,7 +16,13 @@ for (int i = 0; i < n; i++)
 
 // --- INICIO DE LÓGICA DEL ALUMNO ---
 // Instrucción: El alumno debe encontrar el valor máximo del arreglo 'numeros'
-int maximo = numeros[0]; 
+if (n == 0)
+{
+    Console.WriteLine(0);
+    return;
+}
+
+int maximo = numeros[0];
 
 for (int i = 1; i < n; i++)
 {
@@ -25,7 +31,6 @@ for (int i = 1; i < n; i++)
         maximo = numeros[i];
     }
 }
-
 // --- FIN DE LÓGICA DEL ALUMNO ---
 
 // 2. Salida: Lo que el Autograding comparará
